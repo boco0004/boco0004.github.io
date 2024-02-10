@@ -14,7 +14,6 @@ header, footer {
     list-style-type: square;
 }
 
-/* CAn't work? */
 li:nth-child(odd){
     color: tomato;
 }
@@ -23,4 +22,7 @@ ul {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
 
