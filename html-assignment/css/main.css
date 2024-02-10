@@ -23,6 +23,9 @@ ul {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none; background-color:slateblue; border-style: solid;
 }
 
+a:hover {
+     color:paleturquoise
+}
