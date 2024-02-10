@@ -1,0 +1,26 @@
+body {
+    font-family:Arial, Helvetica, sans-serif; font-size: 18px;
+}
+
+header, footer {
+    background-color: #fbb91b;
+}
+
+#my-image, #my-image-2 {
+    box-shadow: 0px 0px 2px 1px black;
+}
+
+.other-hobbies {
+    list-style-type: square;
+}
+
+/* CAn't work? */
+li:nth-child(odd){
+    color: tomato;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
