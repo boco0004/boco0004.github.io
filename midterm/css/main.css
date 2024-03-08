@@ -7,13 +7,14 @@ header {
     background-size: cover;
     text-align: center;
     position: relative;
+    font-size: 30px;
 }
 
 h1 {
-  position: absolute; /* Position the h1 absolutely within the header */
-  top: 50%; /* Place the top of the h1 at the vertical center of the header */
-  left: 50%; /* Place the left edge of the h1 at the horizontal center of the header */
-  transform: translate(-50%, -50%); /* Center the h1 both vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
 }
 
@@ -33,6 +34,7 @@ nav li {
 
 .second_header {
     margin-left: 25px;
+    font-size: 30px;
 }
 
 article img {
@@ -51,6 +53,7 @@ article img {
 
 .third_header {
     margin-left: 25px;
+    font-size: 30px;
 }
 
 body {
@@ -60,6 +63,7 @@ body {
 
 .last_header {
     margin-left: 25px;
+    font-size: 30px;
 }
 
 .form {
