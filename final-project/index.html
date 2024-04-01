@@ -12,17 +12,17 @@
             <nav>
                 <img class="logo-nav" src="images/logo.png">
                 <ul>
-                    <a href="">Home</a> <!-- add id -->
-                    <a href="#about_us">About Us</a> 
-                    <a href="#our_services">Services</a> 
-                    <a href="#our_team">Team</a> 
-                    <a href="#contact_us">Contact</a>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about_us">About Us</a></li> 
+                    <li><a href="#our_services">Services</a></li> 
+                    <li><a href="#our_team">Team</a></li> 
+                    <li><a href="#contact_us">Contact</a></li>
                 </ul>
                 <input type="search" id="search-web" name="s" /> <!-- anchor tag for button -->
                 <button>Search</button>
             </nav>
         </div>
-        <div>
+        <div> <!-- section for main banner   -->
             <img class="main_banner" src="images/main-banner.jpg">
             <div>
                 <h1>Welcome to Three Star Media</h1>
@@ -32,7 +32,7 @@
         </div>
     </header>
     <main>
-        <section id="about_us"> <!-- About Us / add section id for jump link -->
+        <section id="about_us"> <!-- section for About Us -->
             <div> <!-- section content / contains img & text -->
                 <img class="abt_us" src="images/about-us.jpg">
                 <div>
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </section>
-        <section id="our_services"> <!-- Our Services -->
+        <section id="our_services"> <!-- section for Our Services -->
             <div> <!-- contains header + services -->
                 <h1>Our Services</h1>
                 <div> <!-- section for Digital Transformation -->
@@ -50,7 +50,7 @@
                     <div>
                         <h2>Digital Transformation</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis recusandae est totam asperiores? Dignissimos unde error eius vero reprehenderit, itaque quibusdam consequuntur porro accusamus autem ipsum, natus laborum? Quibusdam, perferendis!</p>
-                        <!-- button for digital plans -->
+                        <!-- add a button for digital plans -->
                     </div>
                 </div>
                 <div> <!-- section for Marketing -->
@@ -58,7 +58,7 @@
                     <div>
                         <h2>Marketing</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis recusandae est totam asperiores? Dignissimos unde error eius vero reprehenderit, itaque quibusdam consequuntur porro accusamus autem ipsum, natus laborum? Quibusdam, perferendis!</p>
-                        <!-- button for marketing -->
+                        <!--add a button for marketing -->
                     </div>
                 </div>
                 <div> <!-- section for Video Production -->
@@ -66,7 +66,7 @@
                     <div>
                         <h2>Video Production</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis recusandae est totam asperiores? Dignissimos unde error eius vero reprehenderit, itaque quibusdam consequuntur porro accusamus autem ipsum, natus laborum? Quibusdam, perferendis!</p>
-                        <!-- button for video production -->
+                        <!-- add a button for video production -->
                     </div>
                 </div>
                 <div> <!-- section for Web Development -->
@@ -74,7 +74,7 @@
                     <div>
                         <h2>Web Development</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis recusandae est totam asperiores? Dignissimos unde error eius vero reprehenderit, itaque quibusdam consequuntur porro accusamus autem ipsum, natus laborum? Quibusdam, perferendis!</p>
-                        <!-- button for web development -->
+                        <!-- add a button for web development -->
                     </div>
                 </div>
                 <div> <!-- section for Print -->
@@ -82,7 +82,7 @@
                     <div>
                         <h2>Video Production</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis recusandae est totam asperiores? Dignissimos unde error eius vero reprehenderit, itaque quibusdam consequuntur porro accusamus autem ipsum, natus laborum? Quibusdam, perferendis!</p>
-                        <!-- button for print -->
+                        <!-- add a button for print -->
                     </div>
                 </div>
             </div>
@@ -113,10 +113,12 @@
             </div>
         </section>
         <section id="contact_us"> <!-- Contact Us -->
-            <div>
+            <div class="contact">
                 <h1>Contact Us</h1>
                 <div>
                     <h2>Send us a message</h2> <!-- message boxes -->
+                    <label for="fullname">Full Name</label>
+                    <input id="full_name" type="text" name="fullname" class="text_area">
                     <!-- add msg boxes w/ send button -->
                 </div>
                 <div> 
@@ -125,6 +127,7 @@
                 </div>
                 <div> 
                     <h2>Location</h2> <!-- google maps -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6294.745073437408!2d-75.76247456624533!3d45.34901170943559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1711947747879!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <!-- add google maps -->
                 </div>
             </div>
