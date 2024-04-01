@@ -7,7 +7,7 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header> <!-- contains navigation and main banner  -->
         <div> <!-- navigation  -->
             <nav>
                 <img class="logo-nav" src="images/logo.png">
@@ -22,7 +22,7 @@
                 <button>Search</button>
             </nav>
         </div>
-        <div> <!-- section for main banner   -->
+        <div class="main"> <!-- section for main banner   -->
             <img class="main_banner" src="images/main-banner.jpg">
             <div>
                 <h1>Welcome to Three Star Media</h1>
@@ -32,7 +32,7 @@
         </div>
     </header>
     <main>
-        <section id="about_us"> <!-- section for About Us -->
+        <section id="about_us" class="about"> <!-- section for About Us -->
             <div> <!-- section content / contains img & text -->
                 <img class="abt_us" src="images/about-us.jpg">
                 <div>
@@ -42,53 +42,53 @@
                 </div>
             </div>
         </section>
-        <section id="our_services"> <!-- section for Our Services -->
+        <section id="our_services" class="services"> <!-- section for Our Services -->
             <div> <!-- contains header + services -->
                 <h1>Our Services</h1>
-                <div> <!-- section for Digital Transformation -->
+                <div class="digi_trans"> <!-- section for Digital Transformation -->
                     <img class="digital_trans" src="images/digital.jpg">
                     <div>
                         <h2>Digital Transformation</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis recusandae est totam asperiores? Dignissimos unde error eius vero reprehenderit, itaque quibusdam consequuntur porro accusamus autem ipsum, natus laborum? Quibusdam, perferendis!</p>
-                        <!-- add a button for digital plans -->
+                        <button type="button">Digital Plans</button> <!-- add a button for digital plans -->
                     </div>
                 </div>
-                <div> <!-- section for Marketing -->
-                    <img class="marketing" src="images/marketing.jpg">
+                <div class="marketing"> <!-- section for Marketing -->
+                    <img class="marketing_img" src="images/marketing.jpg">
                     <div>
                         <h2>Marketing</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis recusandae est totam asperiores? Dignissimos unde error eius vero reprehenderit, itaque quibusdam consequuntur porro accusamus autem ipsum, natus laborum? Quibusdam, perferendis!</p>
-                        <!--add a button for marketing -->
+                        <button type="button">Marketing Plans</button> <!-- a button for marketing -->
                     </div>
                 </div>
-                <div> <!-- section for Video Production -->
+                <div class="vid_prod"> <!-- section for Video Production -->
                     <img class="vid_production" src="images/video.jpg">
                     <div>
                         <h2>Video Production</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis recusandae est totam asperiores? Dignissimos unde error eius vero reprehenderit, itaque quibusdam consequuntur porro accusamus autem ipsum, natus laborum? Quibusdam, perferendis!</p>
-                        <!-- add a button for video production -->
+                        <button type="button">Video Plans</button> <!-- a button for video production -->
                     </div>
                 </div>
-                <div> <!-- section for Web Development -->
-                    <img class="web_dev" src="images/web.jpg">
+                <div class="web_dev"> <!-- section for Web Development -->
+                    <img class="web_development" src="images/web.jpg">
                     <div>
                         <h2>Web Development</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis recusandae est totam asperiores? Dignissimos unde error eius vero reprehenderit, itaque quibusdam consequuntur porro accusamus autem ipsum, natus laborum? Quibusdam, perferendis!</p>
-                        <!-- add a button for web development -->
+                        <button type="button">Web Plans</button> <!-- a button for web development -->
                     </div>
                 </div>
-                <div> <!-- section for Print -->
-                    <img class="print" src="images/print.jpg">
+                <div class="print"> <!-- section for Print -->
+                    <img class="print_img" src="images/print.jpg">
                     <div>
-                        <h2>Video Production</h2>
+                        <h2>Print</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis recusandae est totam asperiores? Dignissimos unde error eius vero reprehenderit, itaque quibusdam consequuntur porro accusamus autem ipsum, natus laborum? Quibusdam, perferendis!</p>
-                        <!-- add a button for print -->
+                        <button type="button">Print Plans</button> <!-- a button for print -->
                     </div>
                 </div>
             </div>
         </section>
         <section id="our_vision"> <!-- Our Vision -->
-            <img class="vision_bg" src="images/vision.jpg">
+            <img class="vision_img" src="images/vision.jpg">
             <div> <!-- contains text + button -->
                 <h1>Our Vision</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad iusto maxime vel nobis quasi iste et animi corporis dolore laborum sint, ullam, quidem, illo repellendus mollitia laudantium quam consequatur. Quidem.</p>
@@ -132,7 +132,7 @@
                     <h2>Hours of operation</h2> <!-- work schedule -->
                     <!-- add hours of operation / dates -->
                 </div>
-                <div> 
+                <div class="location"> 
                     <h2>Location</h2> <!-- google maps -->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6294.745073437408!2d-75.76247456624533!3d45.34901170943559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1711947747879!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
@@ -140,7 +140,7 @@
         </section>
     </main>
     <footer> <!-- copyright -->
-        <div> 
+        <div class="copyright"> 
             <p>&copy Copyright Three Star Media, 2020</p>
             <p>All images are taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a></p> <!-- add direct link to Unsplash website -->
         </div>
