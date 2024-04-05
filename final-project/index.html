@@ -18,8 +18,10 @@
                     <li><a href="#our_team">Team</a></li> 
                     <li><a href="#contact_us">Contact</a></li>
                 </ul>
-                <input type="search" id="search-web" name="s" /> <!-- anchor tag for button -->
-                <button>Search</button>
+                <form id="search_bar">
+                    <input type="search" id="search-web" name="s" /> <!-- anchor tag for button -->
+                    <button>Search</button>
+                 </form>
             </nav>
         </div>
         <div class="main"> <!-- section for main banner   -->
@@ -90,7 +92,7 @@
         <section id="our_vision"> <!-- Our Vision -->
             <img class="vision_img" src="images/vision.jpg">
             <div> <!-- contains text + button -->
-                <h1>Our Vision</h1>
+                <h2>Our Vision</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad iusto maxime vel nobis quasi iste et animi corporis dolore laborum sint, ullam, quidem, illo repellendus mollitia laudantium quam consequatur. Quidem.</p>
                 <!-- anchor tag / button for our vision -->
             </div>
@@ -100,13 +102,13 @@
                 <h2>Our Team</h2>
                 <img class="john" src="images/john.jpg">
                 <div>  <!-- John Doe -->
-                    <h1>John Doe</h1>
+                    <h2>John Doe</h2>
                     <h2>Ceo and Co-owner</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus pariatur optio accusamus repellat reprehenderit asperiores eius nisi?</p>
                 </div>
                 <img class="bob" src="images/bob.jpg">
                 <div>  <!-- Bob Rite -->
-                    <h1>Bob Rite</h1>
+                    <h2>Bob Rite</h2>
                     <h2>Ceo and Co-owner</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus pariatur optio accusamus repellat reprehenderit asperiores eius nisi?</p>
                 </div>
@@ -114,17 +116,17 @@
         </section>
         <section id="contact_us"> <!-- Contact Us -->
             <div class="contact">
-                <h1>Contact Us</h1>
+                <h2>Contact Us</h2>
                 <div>
                     <h2>Send us a message</h2> <!-- message boxes -->
                     <label for="fullname">Full Name</label> <!-- full name textbox -->
-                    <input id="name_box" type="text" name="fullname" class="text_area">
+                    <input id="fullname" type="text" name="fullname" class="text_area">
                     <br>
                     <label for="emailaddress">Email</label> <!-- email address textbox -->
-                    <input id="email_box" type="text" name="emailaddress" class="text_area">
+                    <input id="emailaddress" type="text" name="emailaddress" class="text_area">
                     <br>
                     <label for="message">Your Message</label> <!--messsage box-->
-                    <input id="message_box" type="text" name="message" class="text_area_msg">
+                    <input id="message" type="text" name="message" class="text_area_msg">
                     <br>
                     <button type="submit" value="Submit" class="send_button">Send</button> <!-- send button -->
                 </div>
@@ -154,7 +156,7 @@
     </main>
     <footer> <!-- copyright -->
         <div class="copyright"> 
-            <p>&copy Copyright Three Star Media, 2020</p>
+            <p>&copy; Copyright Three Star Media, 2020</p>
             <p>All images are taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a></p> <!-- add direct link to Unsplash website -->
         </div>
     </footer>
