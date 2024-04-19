@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- links for Open Sans  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
     <header> <!-- contains navigation and main banner  -->
-        <div> <!-- navigation  -->
+        <div class="navigation-bar"> <!-- navigation  -->
             <nav>
-                <img class="logo-nav" src="images/logo.png" alt="logo of Three Star Media">
                 <ul>
+                    <img class="logo-nav" src="images/logo.png" alt="logo of Three Star Media">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about_us">About Us</a></li> 
                     <li><a href="#our_services">Services</a></li> 
                     <li><a href="#our_team">Team</a></li> 
                     <li><a href="#contact_us">Contact</a></li>
                 </ul>
-                <form id="search_bar">
+                <form id="search_bar" method="get">
                     <input type="search" id="search-web" name="s" /> <!-- anchor tag for button -->
                     <button>Search</button>
                  </form>
@@ -26,7 +29,7 @@
         </div>
         <div class="main"> <!-- section for main banner   -->
             <img class="main_banner" src="images/main-banner.jpg" alt="office of Three Star Media">
-            <div>
+            <div class="main-content">
                 <h1>Welcome to Three Star Media</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam qui, suscipit accusantium aut minus vel, doloremque, minima perferendis possimus nesciunt nobis perspiciatis!</p>
                 <a href="" class="connect-button" >Connect with us</a> <!-- add id -->
@@ -35,21 +38,21 @@
     </header>
     <main>
         <section id="about_us" class="about"> <!-- section for About Us -->
-            <div> <!-- section content / contains img & text -->
+            <div class="about"> <!-- section content / contains img & text -->
                 <img class="abt_us" src="images/about-us.jpg" alt="recreation room of the office">
-                <div>
+                <div class="about-content">
                     <h2>About Us</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.Quas sint, obcaecati quaerat reprehenderit repellendus doloribus sit facere.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla aliquid tenetur assumenda amet dolorem nobis unde ipsum consectetur obcaecati numquam ab, dolores beatae blanditiis nesciunt quos aperiam consequatur culpa! Quam!</p>
                 </div>
             </div>
         </section>
-        <section id="our_services" class="services"> <!-- section for Our Services -->
-            <div> <!-- contains header + services -->
-                <h2>Our Services</h2>
+        <section id="our_services"> <!-- section for Our Services -->
+            <div class="services"> <!-- contains header + services -->
+                <h2 class="our_services_heading">Our Services</h2>
                 <div class="digi_trans"> <!-- section for Digital Transformation -->
                     <img class="digital_trans" src="images/digital.jpg" alt="a person holding a phone with a laptop in front of them">
-                    <div>
+                    <div class="digi_trans_content">
                         <h2>Digital Transformation</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis recusandae est totam asperiores? Dignissimos unde error eius vero reprehenderit, itaque quibusdam consequuntur porro accusamus autem ipsum, natus laborum? Quibusdam, perferendis!</p>
                         <button type="button">Digital Plans</button> <!-- add a button for digital plans -->
@@ -57,7 +60,7 @@
                 </div>
                 <div class="marketing"> <!-- section for Marketing -->
                     <img class="marketing_img" src="images/marketing.jpg" alt="a laptop showing statistics">
-                    <div>
+                    <div class="marketing_content">
                         <h2>Marketing</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis recusandae est totam asperiores? Dignissimos unde error eius vero reprehenderit, itaque quibusdam consequuntur porro accusamus autem ipsum, natus laborum? Quibusdam, perferendis!</p>
                         <button type="button">Marketing Plans</button> <!-- a button for marketing -->
@@ -65,7 +68,7 @@
                 </div>
                 <div class="vid_prod"> <!-- section for Video Production -->
                     <img class="vid_production" src="images/video.jpg" alt="a phone showing a logo of Youtube">
-                    <div>
+                    <div class="vid_prod_content">
                         <h2>Video Production</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis recusandae est totam asperiores? Dignissimos unde error eius vero reprehenderit, itaque quibusdam consequuntur porro accusamus autem ipsum, natus laborum? Quibusdam, perferendis!</p>
                         <button type="button">Video Plans</button> <!-- a button for video production -->
@@ -73,7 +76,7 @@
                 </div>
                 <div class="web_dev"> <!-- section for Web Development -->
                     <img class="web_development" src="images/web.jpg" alt="a phone on top of a notebook with a pen beside it">
-                    <div>
+                    <div class="web_dev_content">
                         <h2>Web Development</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis recusandae est totam asperiores? Dignissimos unde error eius vero reprehenderit, itaque quibusdam consequuntur porro accusamus autem ipsum, natus laborum? Quibusdam, perferendis!</p>
                         <button type="button">Web Plans</button> <!-- a button for web development -->
@@ -81,7 +84,7 @@
                 </div>
                 <div class="print"> <!-- section for Print -->
                     <img class="print_img" src="images/print.jpg" alt="colourful group of post boxes in the city">
-                    <div>
+                    <div class="print_content">
                         <h2>Print</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis recusandae est totam asperiores? Dignissimos unde error eius vero reprehenderit, itaque quibusdam consequuntur porro accusamus autem ipsum, natus laborum? Quibusdam, perferendis!</p>
                         <button type="button">Print Plans</button> <!-- a button for print -->
@@ -91,25 +94,25 @@
         </section>
         <section id="our_vision"> <!-- Our Vision -->
             <img class="vision_img" src="images/vision.jpg" alt="pictures of paper boats in a blue lighting">
-            <div> <!-- contains text + button -->
+            <div class="vision_content"> <!-- contains text + button -->
                 <h2>Our Vision</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad iusto maxime vel nobis quasi iste et animi corporis dolore laborum sint, ullam, quidem, illo repellendus mollitia laudantium quam consequatur. Quidem.</p>
                 <!-- anchor tag / button for our vision -->
             </div>
         </section>
         <section id="our_team"> <!-- Our Team -->
-            <div> <!-- text + imgs -->
+            <div class="div-our-team"> <!-- text + imgs -->
                 <h2>Our Team</h2>
                 <img class="john" src="images/john.jpg" alt="a portrait of John Doe">
-                <div>  <!-- John Doe -->
-                    <h2>John Doe</h2>
-                    <h2>Ceo and Co-owner</h2>
+                <div class="john-content">  <!-- John Doe -->
+                    <h3>John Doe</h3>
+                    <h4>CEO and Co-owner</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus pariatur optio accusamus repellat reprehenderit asperiores eius nisi?</p>
                 </div>
                 <img class="bob" src="images/bob.jpg" alt="a portrait of Bob Rite">
-                <div>  <!-- Bob Rite -->
-                    <h2>Bob Rite</h2>
-                    <h2>Ceo and Co-owner</h2>
+                <div class="bob-content">  <!-- Bob Rite -->
+                    <h3>Bob Rite</h3>
+                    <h4>CEO and Co-owner</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus pariatur optio accusamus repellat reprehenderit asperiores eius nisi?</p>
                 </div>
             </div>
@@ -117,20 +120,23 @@
         <section id="contact_us"> <!-- Contact Us -->
             <div class="contact">
                 <h2>Contact Us</h2>
-                <div>
-                    <h2>Send us a message</h2> <!-- message boxes -->
-                    <label for="fullname">Full Name</label> <!-- full name textbox -->
-                    <input id="fullname" type="text" name="fullname" class="text_area">
-                    <br>
-                    <label for="emailaddress">Email</label> <!-- email address textbox -->
-                    <input id="emailaddress" type="text" name="emailaddress" class="text_area">
-                    <br>
-                    <label for="message">Your Message</label> <!--messsage box-->
-                    <input id="message" type="text" name="message" class="text_area_msg">
-                    <br>
-                    <button type="submit" value="Submit" class="send_button">Send</button> <!-- send button -->
+                <div class="send_us">
+                    <h3>Send us a message</h3> <!-- message boxes -->
+                    <form action="" method="get">
+                        <label for="fullname">Full Name</label> <!-- full name textbox -->
+                        <input id="fullname" type="text" name="fullname">
+                    </form>
+                    <form action="" method="get">
+                        <label for="emailaddress">Email</label> <!-- email address textbox -->
+                        <input id="emailaddress" type="text" name="emailaddress">
+                    </form>
+                    <form action="" method="get">
+                        <label for="message">Your Message</label> <!--messsage box-->
+                        <input id="message" type="text" name="message">
+                    </form>
+                        <button type="submit" value="Submit" class="send_button">Send</button> <!-- send button -->
                 </div>
-                <div>  
+                <div class="table">  
                     <table> <!-- table of hours of operation -->
                         <caption>Hours of operation</caption>
                         <thead>
@@ -139,8 +145,8 @@
                                 <th>Hours</th>
                             </tr>
                         </thead>
-                        <tbody> <!-- first row -->
-                            <tr>
+                        <tbody> 
+                            <tr> <!-- first row -->
                                 <td>Monday-Friday</td>
                                 <td>9 AM- 6 PM</td>
                             </tr>
@@ -152,7 +158,7 @@
                     </table>
                 </div>
                 <div class="location"> 
-                    <h2>Location</h2> <!-- google maps -->
+                    <h3>Location</h3> <!-- google maps -->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6294.745073437408!2d-75.76247456624533!3d45.34901170943559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1711947747879!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
